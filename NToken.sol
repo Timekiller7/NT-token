@@ -18,7 +18,7 @@ contract NToken is ExtendedBEP20 {
     }
 
     function burn(uint256 amount) external {
-        require(totalSupply() > 100, "Total supply is limited");
+        require(totalSupply() > 100, "Burning of total supply is limited");
         _burn(_msgSender(), amount);
     }
 }
