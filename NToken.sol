@@ -2,7 +2,7 @@ pragma solidity ^0.8.6;
 
 import "./bep.sol";
 
-contract TToken is ExtendedBEP20 {
+contract NToken is ExtendedBEP20 {
     uint256 timeFromLastEmit;
     uint16 constant year = 365;
     
